@@ -32,9 +32,6 @@ Make sure you have installed:
 
 1. **Apply migrations** to create the tables in the database:
     ```bash
-    python manage.py makemigrations
-    ```
-    ```bash
     python manage.py migrate
     ```
 
