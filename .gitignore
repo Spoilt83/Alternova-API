@@ -1,0 +1,47 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyo
+*.pyd
+*.pdb
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+*.sqlite3
+*.env
+*.DS_Store
+/staticfiles/
+/media/
+/local_settings.py
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+virtualenv/
+.venv/
+
+# pyenv
+.python-version
+
+# IDEs y editores
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Otros
+*.swp
+*~
