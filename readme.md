@@ -31,9 +31,7 @@ Make sure you have installed:
 ### 3. Database Configuration
 
 1. **Apply migrations** to create the tables in the database:
-    ```bash
-    python manage.py makemigrations
-    ```
+
     ```bash
     python manage.py migrate
     ```
@@ -216,7 +214,7 @@ Example:
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: 1. Un estudiante se inscribe en una lista de materias.
+## End-point: 1. A student enrolls in a list of subjects.
 ### Enroll Subjects
 
 This endpoint allows the student to enroll in subjects.
@@ -266,7 +264,7 @@ The response is in JSON format and includes a schema for the response.
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: 2. Un estudiante puede obtener la lista de materias en las que está inscrito.
+## End-point: 2. A student can obtain the list of subjects he/she is enrolled in.
 This endpoint makes an HTTP GET request to retrieve the subjects of the current student. The request does not include a request body. The response will be in JSON format with an array of objects containing information about the subjects. Each object includes attributes such as id, status, grade, attendance, date enrolled, date completed, is completed, semester period, notes, student, subject, and professor.
 ### Method: GET
 >```
@@ -282,7 +280,7 @@ This endpoint makes an HTTP GET request to retrieve the subjects of the current 
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: 3. Un estudiante aprueba una materia con una nota igual o mayor a 3.0.
+## End-point: 3. A student passes a subject with a grade equal to or greater than 3.0.
 ### Get Approved Subjects
 
 This endpoint retrieves a list of approved subjects for a student.
@@ -360,7 +358,7 @@ This is a GET request and does not require a request body.
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: 4. Un estudiante puede obtener la lista de sus materias aprobadas y su promedio de puntaje general.
+## End-point: 4. A student can obtain the list of his/her passed subjects and his/her overall grade average.
 ### Get Approved Subjects
 
 This endpoint retrieves the list of approved subjects for a student.
@@ -417,7 +415,7 @@ This endpoint retrieves the list of approved subjects for a student.
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: 5. Comprobar las materias que un estudiante ha reprobado
+## End-point: 5. Check the subjects a student has failed
 ### GET /api/student/failed_subjects/
 
 This endpoint retrieves a list of failed subjects for a student.
@@ -490,7 +488,7 @@ Example Response Body:
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: 6. Un profesor puede tener asignadas varias materias
+## End-point: 6. A teacher can be assigned several subjects
 This endpoint retrieves a list of professors from the API.
 
 ### Request
@@ -560,7 +558,7 @@ Example Response:
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: 7. Un profesor puede obtener las lista de materias a las que esta asignado
+## End-point: 7. A teacher can obtain the list of subjects to which he is assigned
 This endpoint makes an HTTP GET request to retrieve a list of professors from the API. The response will be in JSON format and will include an array of objects, each representing a professor with attributes such as id, name, code, description, credits, department, semester_number, is_active, professor, and prerequisites.
 
 ### Request Body
@@ -604,7 +602,7 @@ The response will be in JSON format and will include an array of objects, each r
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: 8. Un profesor puede ver la lista de estudiantes de cada una de sus materias
+## End-point: 8. A teacher can see the list of students for each of his subjects
 ### Get Professor's Student List
 
 This endpoint makes an HTTP GET request to retrieve the list of students associated with the professor with ID 4.
@@ -634,7 +632,7 @@ This request does not require a request body.
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: 9. Un profesor finaliza la materia (califica cada estudiante)
+## End-point: 9. A teacher completes the subject (grades each student)
 This API endpoint allows the user to grade students for a specific professor. The HTTP POST request should be made to [http://localhost:8000/api/professor/4/grade_students/](http://localhost:8000/api/professor/4/grade_students/). The request body should be in raw format and should include an array of grades, where each grade object contains the student_id and the grade.
 
 ### Request Body
@@ -689,7 +687,7 @@ The API returns a 404 status code with a JSON response. The response body may in
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: 10. Un profesor puede obtener las calificaciones de los estudiantes en sus materias
+## End-point: 10. A teacher can get students' grades in their subjects
 ### Get Professor's Student Grades
 
 This endpoint retrieves the grades of a specific professor's students.
